@@ -8,3 +8,20 @@ for s in strg:
     prefix = prefix[:i]
 
 
+
+print(prefix)
+
+
+options = ['dog', 'racecar', 'car']
+prefix = options[0]
+for o in options:
+    i = 0
+    while i< len(o) and i < len(prefix) and prefix[i] == o[i]:
+        i+=1
+
+
+    prefix = prefix[:i]
+    if i == 0:
+        break
+
+print(prefix)
